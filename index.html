@@ -12,78 +12,49 @@
     <title>Conversor de moedas</title>
     <link rel="stylesheet" href="./style.css">
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
 </head>
 <body>
     <main>
         <section class="conversor">
             <h2>Conversor de moedas</h2>
+            <form action="#">
             <div class="wrapper">
-                <div class="money-wrapper">
-                    <input type="text" class="amount" value="$1.000">
-
-                    <div class="dropdown">
+                <div class="money-wrapper amount">
+                    <input type="text" class="amounte" value="$1.000">
+                    <div class="drop-list">
+                    <div class="dropdown from">
                         <div class="selected">
-                            <span class="fi fi-us fis"></span>
+                            <span class="fi fi-us fis">
+                                <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+                            </span>
                             USD
                         </div>
-
                         <ul>
-                            <li>
-                                <span class="fi fi-br fis"></span>
-                                BRL
-                            </li>
-                            <li>
-                                <span class="fi fi-eu fis"></span>
-                                EUR 
-                            </li>
-                            <li>
-                                <span class="fi fi-gb fis"></span>
-                                GBP
-                            </li>
-                            <li>
-                                <span class="fi fi-us fis"></span>
-                                USD
-                            </li>
+
                         </ul>
                     </div>
-
                 </div>
-                <div class="middle">
+                </div>
+                <div class="middle icon">
                     <img src="./assets/arrows-exchange.svg" alt="Trocar moeda">
                 </div>
-                <div class="money-wrapper">
-                    <input readonly type="text" class="amount" value="R$5241,80">
-
-                    <div class="dropdown">
+                <div class="money-wrapper amount">
+                    <input readonly type="text" class="amounte aqui" value="R$5241,80">
+                    <div class="drop-list">
+                    <div class="dropdown to">
                         <div class="selected">
-                            <span class="fi fi-br fis"></span>
+                            <span class="fi fi-br fis">
+                                <img src="https://flagcdn.com/48x36/br.png" alt="flag">
+                            </span>
                             BRL
                         </div>
-
                         <ul>
-                            <li>
-                                <span class="fi fi-eu fis"></span>
-                                EUR
-                            </li>
-                            <li>
-                                <span class="fi fi-us fis"></span>
-                                USD
-                            </li>
-                            <li>
-                                <span class="fi fi-gp fis"></span>
-                                GBP
-                            </li>
-                            <li>
-                                <span class="fi fi-br fis"></span>
-                                BRL
-                            </li>
+                            
                         </ul>
                     </div>
-
+                </div>
                 </div>
             </div>
         </section>
@@ -100,10 +71,13 @@
                     <button>Máx</button>
                 </div>
             </div>
+        </form>
         </section>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script src="./assets/js/country-list.js"></script>
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/api-key.js"></script>
 </body>
 </html>

@@ -57,7 +57,7 @@ section h2 {
     outline: .25rem solid #7C3AED;
 }
 
-.amount {
+.amounte {
     border: 0;
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -66,7 +66,7 @@ section h2 {
     width: 50%;
 }
 
-.amount:focus {
+.amounte:focus {
     outline: 0;
 }
 
@@ -185,6 +185,11 @@ li{
     border-radius: 999px;
     padding: 0.4rem 0.8rem;
 }
+
+.selected img {
+    max-width: 2.5rem;
+}
+
 
 @media (max-width: 48rem) {
     main {
